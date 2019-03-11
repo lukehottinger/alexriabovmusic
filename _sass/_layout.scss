@@ -1,1 +1,101 @@
 // Main layout styles
+
+header {
+  height: 50px;
+  background-color: #fefefe;
+
+  .static-pages {
+    float: right;
+    display: inline-block;
+
+    a {
+      margin: auto 10px;
+    }
+  }
+
+  .logo {
+    margin-left: 20px;
+    display: inline-block;
+  }
+
+  a {
+    line-height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+
+.main-container {
+  position: relative;
+}
+
+.hero-container {
+  position: relative;
+
+  .hero-link {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #f8a0a0;
+    border: 2px solid #f8a0a0;
+    font-size: 26px;
+    transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+
+    span {
+      line-height: 80px;
+      display: table;
+      margin: 0 auto;
+    }
+
+    &:hover {
+      background-color: #f8a0a0;
+      color: black;
+    }
+  }
+}
+
+.hero {
+  z-index: 1;
+  object-fit: cover;
+  overflow-y: hidden;
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+.main-content {
+  // position: absolute;
+  max-width: 950px;
+  margin: 0 auto;
+  // left: 0;
+  // right: 0;
+  // top: -75px;
+  transform: translateY(-75px);
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  z-index: 2;
+  box-shadow: #666 0px 0px 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+footer {
+  position: relative;
+  background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .copyright {
+    color: white;
+  }
+}
